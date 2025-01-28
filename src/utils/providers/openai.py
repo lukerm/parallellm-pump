@@ -5,7 +5,6 @@ import openai
 
 from ..keys import get_key
 
-SYNONYMS = ["openai", "open_ai", "OpenAI", "Open AI", "OPENAI", "OPEN_AI"]
 OPENAI_MODEL_NAME = "gpt-4o-mini"
 
 
