@@ -1,6 +1,7 @@
 import argparse
 import asyncio
 import logging
+from datetime import datetime
 from typing import List
 
 from .utils.providers.anthropic import prompt_anthropic
@@ -33,6 +34,7 @@ async def parallellm_pump(prompt: str, providers_clean: List[str]):
 
 
 if __name__ == "__main__":
+    t0 = datetime.now()
     parser = argparse.ArgumentParser(
         description="""Pump a prompt to multiple language models in parallel. The --providers should be a list of 
         well-known text-based LLM API providers, such as openai, deepseek, etc. 
@@ -61,5 +63,8 @@ if __name__ == "__main__":
         final_output += f"{provider}\n"
         final_output += f"{'_'*len(provider)}\n\n"
         final_output += f"{completion}\n"
+
+    t1 = datetime.now()
+    logger.info(f"Total run time: {round((t1 - t0).total_seconds(), 2)}s")
 
     logger.info("Results\n" + final_output)
