@@ -7,8 +7,8 @@ def find_provider_synonym(provider: str):
         "openai": OPENAI_SYNONYMS,
     }
 
-    for provider, provider_synonyms in synonyms.items():
+    for canonical, provider_synonyms in synonyms.items():
         if provider in provider_synonyms:
-            return provider
+            return canonical
 
     raise ValueError(f"Provider '{provider}' not found in synonyms list.")
