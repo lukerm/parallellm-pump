@@ -11,19 +11,23 @@ FUNCTION_MAP = {
 }
 
 
-async def parallellm_pump(prompt: str, providers: List[str]):
-    selected_providers = []
-    for provider in providers:
+def get_clean_providers(raw_providers: List[str]):
+    clean_providers = []
+    for provider in raw_providers:
         try:
             selected_provider = find_provider_synonym(provider)
-            selected_providers.append(selected_provider)
+            clean_providers.append(selected_provider)
         except ValueError:
             logging.getLogger(__name__).warning(
                 f"Provider '{provider}' not found in synonyms list. It will be ignored.")
 
-    chats = [FUNCTION_MAP[provider](prompt) for provider in selected_providers]
+    return clean_providers
+
+
+async def parallellm_pump(prompt: str, providers_clean: List[str]):
+    chats = [FUNCTION_MAP[provider](prompt) for provider in providers_clean]
     completions = await asyncio.gather(*chats)
-    return {provider: completions[i] for i, provider in enumerate(selected_providers)}
+    return {provider: completions[i] for i, provider in enumerate(providers_clean)}
 
 
 if __name__ == "__main__":
@@ -46,7 +50,9 @@ if __name__ == "__main__":
     logging.getLogger().addHandler(handler)
     logging.getLogger().setLevel(level='INFO')
 
-    completions = asyncio.run(parallellm_pump(prompt=args.prompt, providers=args.providers))
+    providers_clean = get_clean_providers(args.providers)
+    logger.info(f"Running the pump for the following providers: {', '.join(providers_clean)}")
+    completions = asyncio.run(parallellm_pump(prompt=args.prompt, providers_clean=providers_clean))
 
     final_output = ""
     for provider, completion in completions.items():
