@@ -8,6 +8,17 @@ from .config.prompt_config import PROMPT_FUNCTION_MAP
 from .utils.synonyms import get_clean_providers
 
 
+def format_pump_output(completions: Dict[str, str], providers_clean: Dict[str, str]) -> str:
+    final_output = ""
+    for provider, completion in completions.items():
+        title = f'{providers_clean[provider]}'
+        final_output += f"\n{title}\n"
+        final_output += f"{'_' * len(title)}\n\n"
+        final_output += f"{completion}\n"
+
+    return final_output
+
+
 async def parallellm_pump(prompt: str, providers_clean: Dict[str, str]):
     chats = [PROMPT_FUNCTION_MAP[provider](prompt) for provider in providers_clean.keys()]
     completions = await asyncio.gather(*chats)
@@ -38,13 +49,7 @@ if __name__ == "__main__":
     providers_clean = get_clean_providers(providers_raw=args.providers)
     logger.info(f"Running the pump for the following providers: {', '.join(providers_clean)}")
     completions = asyncio.run(parallellm_pump(prompt=args.prompt, providers_clean=providers_clean))
-
-    final_output = ""
-    for provider, completion in completions.items():
-        title = f'{providers_clean[provider]}'
-        final_output += f"\n{title}\n"
-        final_output += f"{'_'*len(title)}\n\n"
-        final_output += f"{completion}\n"
+    final_output = format_pump_output(completions=completions, providers_clean=providers_clean)
 
     t1 = datetime.now()
     logger.info(f"Total run time: {round((t1 - t0).total_seconds(), 2)}s")
