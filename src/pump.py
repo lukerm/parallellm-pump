@@ -2,29 +2,16 @@ import argparse
 import asyncio
 import logging
 from datetime import datetime
-from typing import Dict, List
+from typing import Dict
 
 from .utils.providers.anthropic import prompt_anthropic
 from .utils.providers.openai import prompt_openai
-from .utils.synonyms import find_provider_synonym
+from .utils.synonyms import get_clean_providers
 
 FUNCTION_MAP = {
     "openai": prompt_openai,
     "anthropic": prompt_anthropic,
 }
-
-
-def get_clean_providers(providers_raw: List[str]) -> Dict[str, str]:
-    providers_clean = {}
-    for provider_raw in providers_raw:
-        try:
-            selected_provider = find_provider_synonym(provider_raw)
-            providers_clean[selected_provider] = provider_raw
-        except ValueError:
-            logging.getLogger(__name__).warning(
-                f"Provider '{provider_raw}' not found in synonyms list. It will be ignored.")
-
-    return providers_clean
 
 
 async def parallellm_pump(prompt: str, providers_clean: Dict[str, str]):
