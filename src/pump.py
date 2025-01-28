@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
     final_output = ""
     for provider, completion in completions.items():
-        final_output += f"{provider}\n"
+        final_output += f"\n{provider}\n"
         final_output += f"{'_'*len(provider)}\n\n"
         final_output += f"{completion}\n"
 
