@@ -19,7 +19,7 @@ def format_pump_output(completions: Dict[str, str], providers_clean: Dict[str, s
     return final_output
 
 
-async def parallellm_pump(prompt: str, providers_clean: Dict[str, str]):
+async def parallellm_pump(prompt: str, providers_clean: Dict[str, str]) -> Dict[str, str]:
     chats = [PROMPT_FUNCTION_MAP[provider](prompt) for provider in providers_clean.keys()]
     completions = await asyncio.gather(*chats)
     return {provider: completions[i] for i, provider in enumerate(providers_clean)}
