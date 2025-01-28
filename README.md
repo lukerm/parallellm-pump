@@ -38,7 +38,7 @@ _Please never commit your API keys to the repository!_
 The vanilla usage is simply to run `pump.py` to prompt multiple LLMs in parallel:
 
 ```bash
-$ python -m src.pump --providers chatgpt claude --prompt "What is the significance of the number 42? Explain in 50 words max." 
+python -m src.pump --providers chatgpt claude --prompt "What is the significance of the number 42? Explain in 50 words max." 
 ```
 ```text
 2025-01-28 15:57:17,903 INFO:Running the pump for the following providers: openai, anthropic
@@ -68,7 +68,7 @@ asyncio.
 A fun extension is to use the `prefer` command to ask the models which one they think is the best:
 
 ```bash
-$ python -m src.prefer --providers chatgpt claude --prompt "What is the significance of the number 42? Explain in 50 words max."
+python -m src.prefer --providers chatgpt claude --prompt "What is the significance of the number 42? Explain in 50 words max."
 ```
 ```text
 #... truncated output
