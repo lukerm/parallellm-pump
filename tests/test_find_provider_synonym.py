@@ -7,8 +7,9 @@ def test_find_provider_synonym_openai():
     assert find_provider_synonym("openai") == "openai"
     assert find_provider_synonym("open_ai") == "openai"
     assert find_provider_synonym("OpenAI") == "openai"
-    with pytest.raises(ValueError):
-        find_provider_synonym("openaii")
+    for typo in ["openaii", "apanai", "ClosedAI"]:
+        with pytest.raises(ValueError):
+            find_provider_synonym(typo)
 
 
 def test_find_provider_synonym_anthropic():
