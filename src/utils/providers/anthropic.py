@@ -27,7 +27,7 @@ async def prompt_anthropic(prompt: str, model_type: str = None):
         )
         t1 = datetime.now()
         logging.getLogger(__name__).info(f"Anthropic response time: {round((t1 - t0).total_seconds(), 2)}s")
-    except (anthropic.AuthenticationError, anthropic.BadRequestError) as e:
+    except (anthropic.AuthenticationError, anthropic.BadRequestError, anthropic.APIError) as e:
         logging.getLogger(__name__).error(f"Anthropic authentication error: {e}")
         return "Unable to connect to Anthropic API. Please check your API key."
 
