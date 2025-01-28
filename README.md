@@ -38,7 +38,7 @@ _Please never commit your API keys to the repository!_
 The vanilla usage is simply to run `pump.py` to prompt multiple LLMs in parallel:
 
 ```bash
-$ python -m src.pump --prompt "What is the significance of the number 42? Explain in 50 words max." --providers chatgpt claude
+$ python -m src.pump --providers chatgpt claude --prompt "What is the significance of the number 42? Explain in 50 words max." 
 2025-01-28 15:57:17,903 INFO:Running the pump for the following providers: openai, anthropic
 2025-01-28 15:57:19,884 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-01-28 15:57:19,927 INFO:OpenAI response time: 1.96s
@@ -66,7 +66,7 @@ asyncio.
 A fun extension is to use the `prefer` command to ask the models which one they think is the best:
 
 ```bash
-$ python -m src.prefer --prompt "What is the significance of the number 42? Explain in 50 words max." --providers chatgpt claude
+$ python -m src.prefer --providers chatgpt claude --prompt "What is the significance of the number 42? Explain in 50 words max."
 #... truncated output
 2025-01-28 16:04:11,092 INFO:Total run time: 8.23s
 2025-01-28 16:04:11,092 INFO:Final preference results:
