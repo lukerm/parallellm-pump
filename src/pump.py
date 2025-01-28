@@ -3,11 +3,13 @@ import asyncio
 import logging
 from typing import List
 
+from .utils.providers.anthropic import prompt_anthropic
 from .utils.providers.openai import prompt_openai
 from .utils.synonyms import find_provider_synonym
 
 FUNCTION_MAP = {
     "openai": prompt_openai,
+    "anthropic": prompt_anthropic,
 }
 
 
