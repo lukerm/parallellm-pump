@@ -39,6 +39,13 @@ if __name__ == "__main__":
         "--providers", "-pp", nargs="+", required=True, help="The list of language model providers to send the prompt to")
     args = parser.parse_args()
 
+    # Set up logging
+    logger = logging.getLogger(__name__)
+    handler = logging.StreamHandler()
+    handler.setFormatter(logging.Formatter('%(asctime)s %(levelname)s:%(message)s'))
+    logging.getLogger().addHandler(handler)
+    logging.getLogger().setLevel(level='INFO')
+
     completions = asyncio.run(parallellm_pump(prompt=args.prompt, providers=args.providers))
 
     final_output = ""
@@ -47,4 +54,4 @@ if __name__ == "__main__":
         final_output += f"{'_'*len(provider)}\n\n"
         final_output += f"{completion}\n"
 
-    print(final_output)
+    logger.info("Results\n" + final_output)
