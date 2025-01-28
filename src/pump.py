@@ -2,7 +2,7 @@ import argparse
 import asyncio
 import logging
 from datetime import datetime
-from typing import List
+from typing import Dict, List
 
 from .utils.providers.anthropic import prompt_anthropic
 from .utils.providers.openai import prompt_openai
@@ -14,21 +14,21 @@ FUNCTION_MAP = {
 }
 
 
-def get_clean_providers(providers_raw: List[str]):
-    providers_clean = []
-    for provider in providers_raw:
+def get_clean_providers(providers_raw: List[str]) -> Dict[str, str]:
+    providers_clean = {}
+    for provider_raw in providers_raw:
         try:
-            selected_provider = find_provider_synonym(provider)
-            providers_clean.append(selected_provider)
+            selected_provider = find_provider_synonym(provider_raw)
+            providers_clean[selected_provider] = provider_raw
         except ValueError:
             logging.getLogger(__name__).warning(
-                f"Provider '{provider}' not found in synonyms list. It will be ignored.")
+                f"Provider '{provider_raw}' not found in synonyms list. It will be ignored.")
 
     return providers_clean
 
 
-async def parallellm_pump(prompt: str, providers_clean: List[str]):
-    chats = [FUNCTION_MAP[provider](prompt) for provider in providers_clean]
+async def parallellm_pump(prompt: str, providers_clean: Dict[str, str]):
+    chats = [FUNCTION_MAP[provider](prompt) for provider in providers_clean.keys()]
     completions = await asyncio.gather(*chats)
     return {provider: completions[i] for i, provider in enumerate(providers_clean)}
 
@@ -60,8 +60,9 @@ if __name__ == "__main__":
 
     final_output = ""
     for provider, completion in completions.items():
-        final_output += f"\n{provider}\n"
-        final_output += f"{'_'*len(provider)}\n\n"
+        title = f'{providers_clean[provider]}'
+        final_output += f"\n{title}\n"
+        final_output += f"{'_'*len(title)}\n\n"
         final_output += f"{completion}\n"
 
     t1 = datetime.now()
