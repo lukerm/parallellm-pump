@@ -20,12 +20,16 @@ async def prompt_openai(prompt: str, model_type: str = None):
         }
     ]
 
-    t0 = datetime.now()
-    response = await client.chat.completions.create(
-        model=model_type if model_type else OPENAI_MODEL_NAME,
-        messages=messages,
-    )
-    t1 = datetime.now()
-    logging.getLogger(__name__).info(f"OpenAI response time: {round((t1 - t0).total_seconds(), 2)}s")
+    try:
+        t0 = datetime.now()
+        response = await client.chat.completions.create(
+            model=model_type if model_type else OPENAI_MODEL_NAME,
+            messages=messages,
+        )
+        t1 = datetime.now()
+        logging.getLogger(__name__).info(f"OpenAI response time: {round((t1 - t0).total_seconds(), 2)}s")
+    except (openai.AuthenticationError, openai.APIError) as e:
+        logging.getLogger(__name__).error(f"OpenAI authentication error: {e}")
+        return "Unable to connect to OpenAI API. Please check your API key."
 
     return response.choices[0].message.content
