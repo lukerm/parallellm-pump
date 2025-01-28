@@ -3,7 +3,7 @@ from datetime import datetime
 
 import anthropic
 
-from src.utils.keys import get_key
+from ..keys import get_key
 
 SYNONYMS = ["anthropic", "Anthropic", "claude", "Claude", "claude_sonnet", "Claude Sonnet", "ClaudeSonnet"]
 ANTHROPIC_MODEL_NAME = "claude-3-5-sonnet-20241022"
