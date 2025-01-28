@@ -1,4 +1,4 @@
 {
     "anthropic": ["anthropic", "Anthropic", "claude", "Claude", "claude_sonnet", "Claude Sonnet", "ClaudeSonnet"],
-    "openai": ["openai", "open_ai", "OpenAI", "Open AI", "OPENAI", "OPEN_AI", "ChatGPT", "chatgpt", "chat_gpt", "Chat GPT", "Chat_GPT"]
+    "openai": ["openai", "open_ai", "open ai", "OpenAI", "Open AI", "OPENAI", "OPEN_AI", "ChatGPT", "chatgpt", "chat_gpt", "Chat GPT", "Chat_GPT"]
 }
