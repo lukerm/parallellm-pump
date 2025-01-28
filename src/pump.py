@@ -4,18 +4,12 @@ import logging
 from datetime import datetime
 from typing import Dict
 
-from .utils.providers.anthropic import prompt_anthropic
-from .utils.providers.openai import prompt_openai
+from .config.prompt_config import PROMPT_FUNCTION_MAP
 from .utils.synonyms import get_clean_providers
-
-FUNCTION_MAP = {
-    "openai": prompt_openai,
-    "anthropic": prompt_anthropic,
-}
 
 
 async def parallellm_pump(prompt: str, providers_clean: Dict[str, str]):
-    chats = [FUNCTION_MAP[provider](prompt) for provider in providers_clean.keys()]
+    chats = [PROMPT_FUNCTION_MAP[provider](prompt) for provider in providers_clean.keys()]
     completions = await asyncio.gather(*chats)
     return {provider: completions[i] for i, provider in enumerate(providers_clean)}
 
