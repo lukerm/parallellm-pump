@@ -59,6 +59,7 @@ if __name__ == "__main__":
     logging.getLogger().setLevel(level='INFO')
 
     providers_clean = get_clean_providers(providers_raw=args.providers)
+    # TODO: Similar one that checks existence of API keys (prevent catastrophic failure)
     logger.info(f"Running the pump for the following providers: {', '.join(providers_clean)}")
     completions = asyncio.run(parallellm_pump(prompt=args.prompt, providers_clean=providers_clean))
     final_output = format_pump_output(completions=completions, providers_clean=providers_clean)
