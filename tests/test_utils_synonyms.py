@@ -18,3 +18,12 @@ def test_find_provider_synonym_anthropic():
     for typo in ["antropic", "clade", "aanthropiic"]:
         with pytest.raises(ValueError):
             find_provider_synonym(typo)
+
+
+def test_find_provider_synonym_google():
+    assert find_provider_synonym("google") == "google"
+    assert find_provider_synonym("Google") == "google"
+    assert find_provider_synonym("gemini") == "google"
+    for typo in ["gogle", "googel", "gemnii"]:
+        with pytest.raises(ValueError):
+            find_provider_synonym(typo)
