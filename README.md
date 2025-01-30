@@ -123,16 +123,16 @@ preference pump, then aggregating results with `bin/tally_preferences.py`, the r
 bash ./bin/run_preference.sh
 ```
 ```text
-Running prompt 00
-Running prompt 01
-Running prompt 02
-Running prompt 03
-Running prompt 04
-Running prompt 05
-Running prompt 06
-Running prompt 07
-Running prompt 08
-Running prompt 09
+Pumping prompt 00
+Pumping prompt 01
+Pumping prompt 02
+Pumping prompt 03
+Pumping prompt 04
+Pumping prompt 05
+Pumping prompt 06
+Pumping prompt 07
+Pumping prompt 08
+Pumping prompt 09
 ```
 ```commandline
 python bin/tally_preferences.py
