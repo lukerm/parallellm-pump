@@ -35,7 +35,8 @@ async def parallellm_prefer(original_prompt: str, providers_clean: Dict[str, str
     Section titles will be denoted with underscores. I want you to read through all the responses and select the one that 
     you think is the best, in terms of factuality and writing style. Please rank your answers from 1 to {len(original_responses)}, 
     where 1 is the best and {len(original_responses)} is the worst. Give a small bullet-point list briefly explaining the
-    reasoning behind your choices.
+    reasoning behind your choices. Please provide your answers (ranked list) before writing any other text, starting with
+    the character '1'.
     
     Prompt
     ______
