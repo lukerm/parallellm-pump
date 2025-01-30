@@ -2,6 +2,7 @@ import logging
 from datetime import datetime
 
 from google import genai
+from google.genai.errors import APIError
 
 from ..keys import get_key
 
@@ -28,7 +29,7 @@ async def prompt_google(prompt: str, model_type: str = None) -> str:
         )
         t1 = datetime.now()
         logging.getLogger(__name__).info(f"Google response time: {round((t1 - t0).total_seconds(), 2)}s")
-    except ValueError as e:  # Placeholder
+    except APIError as e:
         logging.getLogger(__name__).error(f"Google authentication error: {e}")
         return "Unable to connect to Google API. Please check your API key."
 
