@@ -1,5 +1,9 @@
 # Pump Your LLMs In Parallel
 
+_Anthropic's Claude thinks that ChatGPT generates better answers!_
+
+(Based on an empirical study: see [below](#Study).)
+
 This code base allows you to configure and run prompts to multiple LLMs in parallel, via their APIs. You be the judge
 of which provider returns the best result to your prompt (use `pump`). Or, you can ask the LLMs which one is the best
 (user `prefer`).
@@ -109,13 +113,69 @@ In this example, both Claude _and_ ChatGPT prefer Claude's response. Sorry OpenA
 somewhat on a miscalculation of the word count - ChatGPT does _not_ exceed the 50-word limit. It does use 42 words in
 its response though 🤯
 
+## Study
+
+Going further, we can create an empirical test of the models' preferences on a [sample](https://github.com/lukerm/parallellm-pump/tree/bd98110ea8d0b2114f3827947e5136774f915148/data/prompts)
+of prompts (survey size: 10). In this mini study, we pit ChatGPT against Claude. After running the prompts through the
+preference pump, then aggregating results with `bin/tally_preferences.py`, the results are as follows:
+
+```commandline
+bash ./bin/run_preference.sh
+```
+```text
+Running prompt 00
+Running prompt 01
+Running prompt 02
+Running prompt 03
+Running prompt 04
+Running prompt 05
+Running prompt 06
+Running prompt 07
+Running prompt 08
+Running prompt 09
+```
+```commandline
+python bin/tally_preferences.py
+```
+```markdown
+Results (raw):
+|   prompt_no | chatgpt   | claude   | disagree   |
+|------------:|:----------|:---------|:-----------|
+|          00 | claude    | claude   |            |
+|          01 | claude    | chatgpt  | *          |
+|          02 | chatgpt   | chatgpt  |            |
+|          03 | chatgpt   | claude   | *          |
+|          04 | chatgpt   | chatgpt  |            |
+|          05 | chatgpt   | claude   | *          |
+|          06 | chatgpt   | chatgpt  |            |
+|          07 | chatgpt   | chatgpt  |            |
+|          08 | chatgpt   | chatgpt  |            |
+|          09 | chatgpt   | chatgpt  |            |
+```
+
+Based on this table, it's clear that both providers usually prefer ChatGPT's answers, with Claude only choosing its own
+responses 3 / 10 times. If we discount potentially contentious results by excluding those where the models disagree, we
+find that Claude only picked its own work 1 / 7 times! (On the same reduced set, ChatGPT only picked Claude's once.)
+
+Some interesting things I found on reading the response analysis:
+- On two occasions, Claude canned the response but suggesting "I cannot do that" more or less, whereas ChatGPT on the 
+  contrary took the ball and ran with it.
+  - For example, on prompt 08, Claude said: "I can't actually experience what it's like to be a potato since I'm an AI"
+  - This lack of imagination was later marked down by both models, including itself.
+  - Clauded lauded ChatGPT for "engaging creatively ... while remaining grounded in factual information" - pun intended? 🥔
+- Claude raised good points on contested prompt 03, a short quiz on acronyms:
+  - It criticized ChatGPT using two very similar acronyms within the same quiz: DNA and RNA. 
+  - Claude also noticed that ChatGPT got "NASA" wrong (it said Agency instead of Administration for the second A).
+
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or PR if you have any suggestions or improvements. There are many ideas 
 to improve this codebase, such as:
 
 - Integrating more LLM providers
-- Configuration for using different models from the same provider (e.g.GPT-4o vs GPT-o1) 
+- Configuration for using different models from the same provider (e.g.GPT-4o vs GPT-o1)
+- Integrate with aggregators like Replicate
 - Creating a python module and/or command-line tool
 - Support for prompt files and response files (input/output)
 - Support for Docker
