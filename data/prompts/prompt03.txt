@@ -1,0 +1,2 @@
+Come up with a short quiz containing five questions on acronyms relating to scientific terms. It should be entry level
+so that someone with a general interest in science can answer them. Multiple choice questions with four options.
