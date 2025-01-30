@@ -20,6 +20,18 @@ def format_pump_output(completions: Dict[str, str], providers_clean: Dict[str, s
 
 
 async def parallellm_pump(prompt: str, providers_clean: Dict[str, str]) -> Dict[str, str]:
+    """
+    Run the parallel pump for the supplied prompt for each of the given providers.
+
+    Note: this is the main asyncio entry point for getting the prompts asynchronously.
+
+    :param prompt: str, the desired prompt to send to the language models
+    :param providers_clean: dict, str:str, a map of canonical provider names to raw provider names
+            Note: we only make use of the canonical provider names (stored as keys).
+    :return: dict, str:str, a map of canonical provider names to their respective responses
+        key: str, the canonical provider name
+        value: str, the response from the language model
+    """
     chats = [PROMPT_FUNCTION_MAP[provider](prompt) for provider in providers_clean.keys()]
     completions = await asyncio.gather(*chats)
     return {provider: completions[i] for i, provider in enumerate(providers_clean)}

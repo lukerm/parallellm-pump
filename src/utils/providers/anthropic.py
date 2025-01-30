@@ -9,7 +9,14 @@ ANTHROPIC_MODEL_NAME = "claude-3-5-sonnet-20241022"
 ANTHROPIC_MAX_TOKENS = 4096
 
 
-async def prompt_anthropic(prompt: str, model_type: str = None):
+async def prompt_anthropic(prompt: str, model_type: str = None) -> str:
+    """
+    Prompt the Anthropic API with a given prompt.
+
+    :param prompt: str, the prompt to send to the API
+    :param model_type: str, sub-model identifier, e.g. "claude-3-5-sonnet-20241022"
+    :return: str, the text response from the LLM
+    """
     api_key = get_key("anthropic")
     client = anthropic.AsyncAnthropic(api_key=api_key)
 

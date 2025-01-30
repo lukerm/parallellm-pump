@@ -9,6 +9,21 @@ from .utils.synonyms import get_clean_providers
 
 
 async def parallellm_prefer(original_prompt: str, providers_clean: Dict[str, str]):
+    """
+    Run the parallel pump -> prefer pipeline for the supplied prompt for each of the given providers.
+    This consists of two main steps:
+      1. Send the original prompt to each of the language models
+      2a. Make a new prompt containing original prompts and responses
+      2b. Send the new prompt to each of the language models, asking them to rank the anonymous responses.
+
+    :param prompt: str, the desired prompt to send to the language models
+    :param providers_clean: dict, str:str, a map of canonical provider names to raw provider names
+            Note: we only make use of the canonical provider names (stored as keys).
+    :return: dict, str:str, a map of canonical provider names to their respective ranked responses
+        key: str, the canonical provider name
+        value: str, the response from the language model to the second, constructed prompt
+    """
+
     original_responses = await parallellm_pump(prompt=original_prompt, providers_clean=providers_clean)
     logger.info(f"Results from original prompt:\n"
                 f"{format_pump_output(completions=original_responses, providers_clean=providers_clean)}\n")

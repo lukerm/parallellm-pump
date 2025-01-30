@@ -8,7 +8,14 @@ from ..keys import get_key
 OPENAI_MODEL_NAME = "gpt-4o-mini"
 
 
-async def prompt_openai(prompt: str, model_type: str = None):
+async def prompt_openai(prompt: str, model_type: str = None) -> str:
+    """
+    Prompt the OpenAI API with a given prompt.
+
+    :param prompt: str, the prompt to send to the API
+    :param model_type: str, sub-model identifier, e.g. "gpt-4o-mini"
+    :return: str, the text response from the LLM
+    """
     api_key = get_key("openai")
     client = openai.AsyncOpenAI(api_key=api_key)
 
