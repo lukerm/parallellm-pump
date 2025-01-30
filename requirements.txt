@@ -1,4 +1,6 @@
 anthropic~=0.45
 google-genai~=0.7
 openai~=1.60.2
+pandas~=2.2.3
 pytest~=8.3.4
+tabulate~=0.9
