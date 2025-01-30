@@ -158,13 +158,13 @@ responses 3 / 10 times. If we discount potentially contentious results by exclud
 find that Claude only picked its own work 1 / 7 times! (On the same reduced set, ChatGPT only picked Claude's once.)
 
 Some interesting things I found on reading the response analysis:
-- On two occasions, Claude canned the response but suggesting "I cannot do that" more or less, whereas ChatGPT on the 
+- On two occasions, Claude canned the response by suggesting "I cannot do that" more or less, whereas ChatGPT on the 
   contrary took the ball and ran with it.
   - For example, on prompt 08, Claude said: "I can't actually experience what it's like to be a potato since I'm an AI"
-  - This lack of imagination was later marked down by both models, including itself.
-  - Clauded lauded ChatGPT for "engaging creatively ... while remaining grounded in factual information" - pun intended? 🥔
+  - This lack of imagination was later marked down by both models, including itself of course.
+  - Claude praised ChatGPT for "engaging creatively ... while remaining grounded in factual information" - pun intended? 🥔
 - Claude raised good points on contested prompt 03, a short quiz on acronyms:
-  - It criticized ChatGPT using two very similar acronyms within the same quiz: DNA and RNA. 
+  - It criticized ChatGPT for using two very similar acronyms within the same quiz: DNA and RNA. 
   - Claude also noticed that ChatGPT got "NASA" wrong (it said Agency instead of Administration for the second A).
 
 
