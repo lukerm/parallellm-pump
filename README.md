@@ -1,4 +1,4 @@
-# Pump Your LLMs In Parallel
+# ParalleLLM: Pump Your LLMs In Parallel
 
 _Anthropic's Claude thinks that ChatGPT generates better answers!_
 
