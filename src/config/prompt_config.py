@@ -6,8 +6,8 @@ from src.utils.providers.openai import prompt_openai
 
 PROMPT_FUNCTION_MAP = {
     "alibaba": prompt_alibaba,
-    "deepseek": prompt_deepseek,
-    "openai": prompt_openai,
     "anthropic": prompt_anthropic,
+    "deepseek": prompt_deepseek,
     "google": prompt_google,
+    "openai": prompt_openai,
 }
