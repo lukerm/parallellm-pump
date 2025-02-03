@@ -1,4 +1,7 @@
 {
+    "alibaba": {
+        "api-key": "<ALIBABA_API_KEY>"
+    },
     "openai": {
         "api-key": "<OPENAI_API_KEY>"
     },
