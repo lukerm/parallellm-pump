@@ -5,6 +5,9 @@
     "anthropic": {
         "api-key": "<ANTHROPIC_API_KEY>"
     },
+    "google": {
+        "api-key": "<GOOGLE_API_KEY>"
+    },
     "openai": {
         "api-key": "<OPENAI_API_KEY>"
     }
