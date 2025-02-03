@@ -1,6 +1,7 @@
 {
     "alibaba": ["alibaba", "Alibaba", "Qwen", "qwen"],
     "anthropic": ["anthropic", "Anthropic", "claude", "Claude", "claude_sonnet", "Claude Sonnet", "ClaudeSonnet"],
+    "deepseek": ["deepseek", "DeepSeek", "Deepseek", "deepSeek"],
     "google": ["google", "Google", "gemini", "Gemini"],
     "openai": ["openai", "open_ai", "open ai", "OpenAI", "Open AI", "OPENAI", "OPEN_AI", "ChatGPT", "chatgpt", "chat_gpt", "Chat GPT", "Chat_GPT"]
 }
