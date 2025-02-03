@@ -6,7 +6,9 @@ _Anthropic's Claude thinks that ChatGPT generates better answers!_
 
 This code base allows you to configure and run prompts to multiple LLMs in parallel, via their APIs. You be the judge
 of which provider returns the best result to your prompt (use `pump`). Or, you can even ask the LLMs which one is the 
-best (use `prefer`).
+best (use `prefer`). See the demo for how to use it or read on.
+
+![Example usage](demo.gif)
 
 ## Technical Details
 
