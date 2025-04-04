@@ -12,17 +12,14 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
+import argparse
 import json
 import os
 import re
-from collections import Counter
 from pathlib import Path
-from typing import Dict
+from typing import Dict, List
 
 import pandas as pd
-
-
-PROVIDERS = ["chatgpt", "claude"]  # Must be in correct order (as originally supplied to pump/prefer.py)
 
 
 def format_output(counters: Dict, rmap: Dict[int, str]) -> str:
@@ -33,40 +30,104 @@ def format_output(counters: Dict, rmap: Dict[int, str]) -> str:
     return jdump
 
 
-if __name__ == "__main__":
+def detect_providers_in_order(path_to_logs: Path, provider_part_idx: int = None) -> List[str]:
+    """
+    Infer from the path provided which providers were used to create the log files.
 
-    response_path = Path(__file__).resolve().parents[1] / "data" / "responses" / "chatgpt_vs_claude"
-    response_files = os.listdir(response_path)
+    Assumes paths of format similar to:
+    .../data/responses/chatgpt_vs_gemini_vs_claude/v1/
 
-    providers = PROVIDERS
-    rmap = {str(i + 1): provider for i, provider in enumerate(providers)}
-    counters = {provider: Counter() for provider in providers}
+    This would return (noting the order is important):
+    ["chatgpt", "gemini", "claude"]
+    """
+    provider_part = [part for part in path_to_logs.parts if '_vs_' in part]
+    if len(provider_part) == 0:
+        provider_part = [path_to_logs.parts[provider_part_idx or -1]]  # assume last part unless overridden by argument
+    provider_part = provider_part[0]
 
-    rows = []
-    for response_file in sorted(response_files):
+    return provider_part.split('_vs_')
 
-        prompt_no = response_file.split(".")[0].replace("prompt", "")
-        row = {'prompt_no': prompt_no}
 
-        with open(Path(response_path) / response_file, 'r') as f:
+def extract_final_preferences_from_log_files(path_to_logs: Path) -> pd.DataFrame:
+    providers = detect_providers_in_order(path_to_logs=path_to_logs)
+    min_provider_len = min([len(p) for p in providers])
+    log_files = sorted(os.listdir(path_to_logs))
+
+    data_rows = []
+
+    for i, log_file in enumerate(log_files):
+        prompt_no = log_file.split(".")[0].replace("prompt", "")
+
+        with open(Path(path_to_logs) / log_file, 'r') as f:
             log = f.read()
 
-        # Search for patterns of the form:
-        # chatgpt
-        # _______
-        #
-        # 1. Response 1
-        for provider in providers:
-            search_pattern = f"{provider}\n{'_'*len(provider)}\n\n"
-            search_pattern += "1. Response ([0-9])"
-            grep = re.search(search_pattern, log)
-            counters[provider].update([grep.group(1)])
-            row[provider] = rmap[grep.group(1)]
+        log = log.split("Final preference results:")[1]  # Discard everything but final ratings
+        for k, provider_rater in enumerate(providers):
+            # Content between provider titles, e.g.
+            # chatgpt
+            # _______
+            # 1. ...
+            # claude
+            # ______
+            provider_result = log.split('_'*min_provider_len)[k+1]
+            # print(f'{provider_result[:10]=}')
 
-        row['disagree'] = '*' if row[providers[0]] != row[providers[1]] else ''
-        rows.append(row)
+            pattern = "(\d)\.[ ]*\**[a-zA-Z0-9 ]+\(([a-z]+)\)"
+            matches = list(set(re.findall(pattern, provider_result)))
+            if len(matches) != len(providers):
+                print('----')
+                print(log_file)
+                print(provider_rater)
+                print(matches)
+                print('----')
 
-    print("Results (raw):")
-    print(pd.DataFrame(rows).to_markdown(index=False))
-    print("\nResults (tallied):")
-    print(format_output(counters=counters, rmap={i+1: provider for i, provider in enumerate(providers)}))
+            for rank, provider in matches:
+                data_rows.append({
+                    'prompt_no': prompt_no,
+                    'provider_rater': provider_rater,
+                    'provider_responder': provider,
+                    'rank': rank,
+                })
+
+    return pd.DataFrame(data_rows)
+
+
+if __name__ == "__main__":
+
+    args = argparse.ArgumentParser(description="Extract preference data from log files generated from using prefer.py")
+    args.add_argument('--path', required=True, type=str, help="root directory where output log files are stored")
+    args.add_argument(
+        '--subfolder', type=str, default=None,
+        help="""
+        specify a 1-level directory structure below root path
+          (None implies there is no structure, i.e. logs stored directly in root path)
+          e.g. "round" means that there are multiple subfolders storing log files, e.g.: 
+          path/
+            round0/
+              prompt00.log
+              prompt01.log
+              ...
+            round1/
+              ...
+            ...  
+        """
+    )
+    args = args.parse_args()
+
+    root_path = Path(args.path)
+    if args.subfolder is None:
+        # This case means there is a flat structure => log files stored directly under args.path
+        df_rank = extract_final_preferences_from_log_files(path_to_logs=root_path)
+    else:
+        # This case means there are multiple log file directories to iterate through
+        df_rank = pd.DataFrame(None)
+        for logs_subfolder in sorted(root_path.glob(f'{args.subfolder}*')):
+            print(f'Processing subfolder: {logs_subfolder.parts[-1]}')
+            my_df_rank = extract_final_preferences_from_log_files(path_to_logs=logs_subfolder)
+            my_df_rank['subfolder'] = logs_subfolder.parts[-1]
+            df_rank = pd.concat([df_rank, my_df_rank])
+        df_rank.reset_index(drop=True, inplace=True)
+
+    df_rank['rank'] = df_rank['rank'].astype(int)
+    df_rank['top-1'] = df_rank['rank'].apply(lambda rank: rank == 1)
+    df_rank['top-2'] = df_rank['rank'].apply(lambda rank: rank <= 2)
