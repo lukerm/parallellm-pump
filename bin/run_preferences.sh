@@ -13,7 +13,7 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-PROVIDERS="chatgpt claude"
+PROVIDERS=${1:-"chatgpt claude"}
 PROVIDERS_VS=$(echo $PROVIDERS | sed -e 's/ /_vs_/g')
 mkdir -p data/responses/$PROVIDERS_VS
 for i in {0..9}; do
