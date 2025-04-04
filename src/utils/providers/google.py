@@ -21,7 +21,7 @@ from google.genai.errors import APIError
 from ..keys import get_key
 
 
-GOOGLE_MODEL_NAME = "gemini-2.0-flash-exp"
+GOOGLE_MODEL_NAME = "gemini-2.0-flash"
 
 
 async def prompt_google(prompt: str, model_type: str = None) -> str:

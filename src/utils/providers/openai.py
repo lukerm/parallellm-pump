@@ -19,7 +19,7 @@ import openai
 
 from ..keys import get_key
 
-OPENAI_MODEL_NAME = "gpt-4o-mini"
+OPENAI_MODEL_NAME = "chatgpt-4o-latest"
 
 
 async def prompt_openai(prompt: str, model_type: str = None, base_url: str = None, api_key_name: str = "openai", do_log: bool = True) -> str:
