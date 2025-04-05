@@ -129,5 +129,10 @@ if __name__ == "__main__":
         df_rank.reset_index(drop=True, inplace=True)
 
     df_rank['rank'] = df_rank['rank'].astype(int)
-    df_rank['top-1'] = df_rank['rank'].apply(lambda rank: rank == 1)
-    df_rank['top-2'] = df_rank['rank'].apply(lambda rank: rank <= 2)
+    df_rank['top-1'] = df_rank['rank'].apply(lambda rank: 100*(rank == 1))
+    df_rank['top-2'] = df_rank['rank'].apply(lambda rank: 100*(rank <= 2))
+
+    llm_name_map = {'chatgpt': 'ChatGPT', 'claude': 'Claude', 'deepseek': 'DeepSeek', 'gemini': 'Gemini'}
+    for llm_name in df_rank['provider_responder'].unique():
+        df_rank.loc[df_rank['provider_responder'] == llm_name, 'provider_responder'] = llm_name_map[llm_name]
+        df_rank.loc[df_rank['provider_rater'] == llm_name, 'provider_rater'] = llm_name_map[llm_name]
