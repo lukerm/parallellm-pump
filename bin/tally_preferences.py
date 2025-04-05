@@ -112,6 +112,7 @@ if __name__ == "__main__":
             ...  
         """
     )
+    args.add_argument('--save-data', action='store_true', default=False, help="Save rank data to CSV file")
     args = args.parse_args()
 
     root_path = Path(args.path)
@@ -136,3 +137,7 @@ if __name__ == "__main__":
     for llm_name in df_rank['provider_responder'].unique():
         df_rank.loc[df_rank['provider_responder'] == llm_name, 'provider_responder'] = llm_name_map[llm_name]
         df_rank.loc[df_rank['provider_rater'] == llm_name, 'provider_rater'] = llm_name_map[llm_name]
+
+    if args.save_data:
+        data_fname = 'llm_rank_data.csv'
+        df_rank.to_csv(root_path / data_fname, index=False)
