@@ -25,6 +25,8 @@ df_group_responder_rater <- df_rank %>%
     Rater = provider_rater
   )
 
+df_rank[(df_rank$prompt_no == 1) & (df_rank$provider_responder=="Claude") & (df_rank$provider_rater=="Claude"), ]
+# ranks: 3 3 3 4 4 4 4 3 4 1
 
 # Boxplots
 
