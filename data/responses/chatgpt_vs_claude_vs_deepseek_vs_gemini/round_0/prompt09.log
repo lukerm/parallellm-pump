@@ -1,0 +1,473 @@
+2025-04-04 16:18:46,770 INFO:Running the pump for the following providers: openai, anthropic, deepseek, google
+2025-04-04 16:18:46,906 INFO:AFC is enabled with max remote calls: 10.
+2025-04-04 16:18:47,919 INFO:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:18:51,196 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:18:51,216 INFO:OpenAI response time: 4.39s
+2025-04-04 16:18:51,710 INFO:Google response time: 4.8s
+2025-04-04 16:18:53,038 INFO:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-04 16:18:53,049 INFO:Anthropic response time: 6.18s
+2025-04-04 16:19:13,726 INFO:DeepSeek response time: 26.86s
+2025-04-04 16:19:13,727 INFO:Results from original prompt:
+
+chatgpt
+_______
+
+Changing a toilet seat is a relatively simple DIY task that usually takes less than 30 minutes. Here's a step-by-step guide to do it with minimal fuss:
+
+### Tools You May Need:
+- Adjustable wrench or pliers
+- Flathead screwdriver
+- Cleaning supplies (disinfectant, rag)
+
+---
+
+### Step 1: Choose the Right Seat
+1. **Measure Your Toilet** – Most toilets are either round or elongated:
+   - Round bowls: ~16.5 inches from seat bolts to front.
+   - Elongated bowls: ~18.5 inches.
+2. Buy a seat that matches your toilet's shape and mounting style.
+
+---
+
+### Step 2: Remove the Old Seat
+1. **Locate the Bolts** – Look behind the seat hinge—there are usually two plastic covers.
+2. **Pop Open the Covers** – Use a flathead screwdriver to gently pry open the caps covering the bolts.
+3. **Hold the Nuts Underneath** – Under the toilet, feel for the wingnuts or hex nuts attaching the seat.
+4. **Unscrew the Bolts** – Use your hand, wrench, or pliers to hold the nuts while turning the bolts on top counterclockwise with a screwdriver.
+   - *Tip:* If the nuts are corroded, apply penetrating oil and let sit, or carefully cut them with a small hacksaw if needed.
+
+---
+
+### Step 3: Clean the Area
+Before installing the new seat, take a moment to disinfect the area around the bolt holes.
+
+---
+
+### Step 4: Install the New Seat
+1. **Align the Seat** – Place the new seat over the holes, aligning it properly.
+2. **Insert the Bolts** – Drop the provided bolts through the mounting holes.
+3. **Tighten the Nuts** – From below, hand-tighten the nuts, then snug them up with a wrench (don’t overtighten—plastic can crack).
+4. **Snap on Bolt Covers** – If your new seat has them, close the decorative bolt covers.
+
+---
+
+### Step 5: Test It
+Wiggle the seat gently and ensure it feels stable and secure.
+
+---
+
+### Tips for an Easy Install:
+- Choose a **quick-release toilet seat** for easier future cleaning/removal.
+- Some new models don’t even require tools—check for “tool-free installation” on the packaging.
+
+---
+
+That’s it! Now you’ve got a clean, stable, new toilet seat with minimal hassle.
+
+claude
+______
+
+# Changing a Toilet Seat with Minimal Fuss
+
+## What You'll Need
+- New toilet seat
+- Adjustable wrench or pliers
+- Screwdriver (likely flathead)
+- Disinfectant wipes or spray
+
+## Step-by-Step Process
+1. **Prepare the area**: Clean around the current seat with disinfectant wipes.
+
+2. **Locate the bolts**: Look at the back of the toilet seat where it connects to the bowl. You'll see two bolts with nuts underneath.
+
+3. **Loosen the nuts**: Hold the bolt heads from above while loosening the nuts from underneath. If they're plastic, you may be able to unscrew them by hand; otherwise, use your wrench.
+
+4. **Remove the old seat**: Once the nuts are off, lift the old seat straight up and discard it.
+
+5. **Install the new seat**: Position the new seat, aligning the holes with the bolt holes in the toilet.
+
+6. **Insert and tighten bolts**: Place the new bolts through the holes and hand-tighten the nuts from underneath. Finish tightening with your wrench, but be careful not to overtighten as this can crack the porcelain.
+
+7. **Check alignment**: Make sure the seat is centered before final tightening.
+
+That's it! The whole process should take less than 15 minutes.
+
+deepseek
+________
+
+Changing a toilet seat is a straightforward task that you can do in just a few minutes with minimal fuss. Here’s a simple step-by-step guide:
+
+### **Tools You’ll Need:**
+- **New toilet seat** (ensure it fits your toilet shape—round or elongated)
+- **Adjustable wrench** or **pliers** (optional, if bolts are stubborn)
+- **Screwdriver** (flathead or Phillips, depending on the bolts)
+- **Rubber gloves** (optional, for hygiene)
+
+### **Steps to Replace a Toilet Seat:**
+1. **Remove the Old Seat:**  
+   - Lift the plastic covers at the back of the seat (near the hinges).  
+   - Use a screwdriver to loosen the nuts underneath (turn counterclockwise).  
+   - If the bolts are corroded, spray with **WD-40** or use pliers to hold the bolt while turning the nut.  
+   - Once loose, lift the old seat off and discard it.
+
+2. **Clean the Area:**  
+   - Wipe the toilet rim with a disinfectant to remove any grime or residue.
+
+3. **Install the New Seat:**  
+   - Align the new seat’s hinges with the bolt holes on the toilet.  
+   - Insert the bolts (usually plastic or metal) through the holes.  
+   - Secure them with the provided nuts underneath (hand-tighten first).  
+   - Use a screwdriver to tighten just enough so the seat doesn’t wobble, but **don’t overtighten** (plastic can crack).  
+
+4. **Test for Stability:**  
+   - Gently wiggle the seat to ensure it’s secure. Adjust if needed.  
+   - Snap any hinge covers into place for a clean look.
+
+### **Pro Tips for Minimal Fuss:**
+✔ **Quick-Release Seats:** Some modern seats have push-button releases, making future changes even easier.  
+✔ **Measure First:** Check if your toilet is **round** or **elongated** before buying a new seat.  
+✔ **Soft-Close Feature:** Consider upgrading to a slow-close seat to prevent slamming.  
+
+That’s it! No need for a plumber—just a few minutes of work for a fresh, wobble-free toilet seat. 🚽🔧
+
+gemini
+______
+
+Changing a toilet seat can be a breeze if you follow these steps to minimize the fuss:
+
+**1. Gather Your Supplies:**
+
+*   **New Toilet Seat:** Ensure it's the right shape (elongated or round) and size for your toilet bowl. Measure the distance between the mounting holes if you're unsure.
+*   **Screwdriver:** Usually a Phillips-head screwdriver, but sometimes a flathead.
+*   **Adjustable Wrench or Pliers (Optional):** Might be needed for stubborn bolts.
+*   **Penetrating Oil (Optional):** WD-40 or similar, if bolts are rusty or stuck.
+*   **Gloves (Optional):** For hygiene.
+*   **Old Rag or Paper Towels:** For wiping.
+
+**2. Remove the Old Toilet Seat:**
+
+*   **Locate the Mounting Bolts:** These are usually covered by plastic caps on the top of the toilet bowl, behind the seat.
+*   **Lift the Caps:** Gently pry them open with your fingernail or the edge of a flathead screwdriver.
+*   **Loosen the Bolts:**
+    *   **From Above:** Hold the nut under the toilet bowl with one hand (if you can reach it) while turning the screw from above with the screwdriver.
+    *   **From Below (If Accessible):** Use the wrench or pliers to hold the nut under the bowl while unscrewing from above.
+    *   **If Stuck:** Apply penetrating oil to the bolts and let it sit for 10-15 minutes before trying again.
+*   **Remove the Seat:** Once the bolts are loose, lift the old seat off the toilet.
+*   **Clean:** Wipe down the area around the mounting holes with a rag.
+
+**3. Install the New Toilet Seat:**
+
+*   **Identify Hardware:** Familiarize yourself with the new seat's hardware (bolts, nuts, washers). Some seats come with different options for different toilet types.
+*   **Insert the Bolts:**
+    *   Insert the bolts through the mounting holes in the toilet bowl.
+    *   From underneath the bowl, attach the washers and nuts to the bolts.
+*   **Position the Seat:**
+    *   Place the new seat onto the bolts.
+    *   Adjust the position so that the seat is centered and aligned with the bowl.
+*   **Tighten the Bolts:**
+    *   Tighten the nuts by hand first to ensure proper alignment.
+    *   Then, use the screwdriver and (if needed) wrench to tighten the bolts securely, but **do not overtighten**. You risk cracking the porcelain.
+*   **Test:** Open and close the seat to make sure it moves smoothly and is securely attached.
+*   **Snap on Caps (if included):** Cover the bolt heads with the provided plastic caps.
+
+**Tips to Minimize Fuss:**
+
+*   **Read the Instructions:** Carefully read the instructions that come with your new toilet seat. Each model might have slight variations.
+*   **Penetrating Oil is Your Friend:** If you suspect rust or corrosion, don't force anything. Apply penetrating oil and let it work its magic.
+*   **Don't Over-Tighten:** Over-tightening the bolts can damage the toilet bowl or the seat itself.
+*   **If It's Too Hard:** If you're struggling, don't hesitate to call a plumber. Sometimes, old bolts are too rusted or stuck to remove without specialized tools.
+*   **Universal Seats:** Consider buying a "universal fit" toilet seat.  These are often designed to work with a wider range of toilet bowl shapes.
+
+By following these steps, you should be able to change your toilet seat quickly and easily, with minimal fuss. Good luck!
+
+
+
+2025-04-04 16:19:13,728 INFO:New prompt:
+
+    You are going to receive 4 responses from different large language models. The prompt will be 
+    displayed first (labelled as the 'Prompt' section), followed by subsequent sections labelled as 'Response <n>'. 
+    Section titles will be denoted with underscores. I want you to read through all the responses and select the one that 
+    you think is the best, in terms of factuality and writing style. Please rank your answers from 1 to 4, 
+    where 1 is the best and 4 is the worst. Give a small bullet-point list briefly explaining the
+    reasoning behind your choices. Please provide your answers (ranked list) before writing any other text, starting with
+    the character '1'.
+    
+    Prompt
+    ______
+    How do change a toilet seat with minimal fuss?
+    
+    
+    Response 1
+    __________
+    Changing a toilet seat is a relatively simple DIY task that usually takes less than 30 minutes. Here's a step-by-step guide to do it with minimal fuss:
+
+### Tools You May Need:
+- Adjustable wrench or pliers
+- Flathead screwdriver
+- Cleaning supplies (disinfectant, rag)
+
+---
+
+### Step 1: Choose the Right Seat
+1. **Measure Your Toilet** – Most toilets are either round or elongated:
+   - Round bowls: ~16.5 inches from seat bolts to front.
+   - Elongated bowls: ~18.5 inches.
+2. Buy a seat that matches your toilet's shape and mounting style.
+
+---
+
+### Step 2: Remove the Old Seat
+1. **Locate the Bolts** – Look behind the seat hinge—there are usually two plastic covers.
+2. **Pop Open the Covers** – Use a flathead screwdriver to gently pry open the caps covering the bolts.
+3. **Hold the Nuts Underneath** – Under the toilet, feel for the wingnuts or hex nuts attaching the seat.
+4. **Unscrew the Bolts** – Use your hand, wrench, or pliers to hold the nuts while turning the bolts on top counterclockwise with a screwdriver.
+   - *Tip:* If the nuts are corroded, apply penetrating oil and let sit, or carefully cut them with a small hacksaw if needed.
+
+---
+
+### Step 3: Clean the Area
+Before installing the new seat, take a moment to disinfect the area around the bolt holes.
+
+---
+
+### Step 4: Install the New Seat
+1. **Align the Seat** – Place the new seat over the holes, aligning it properly.
+2. **Insert the Bolts** – Drop the provided bolts through the mounting holes.
+3. **Tighten the Nuts** – From below, hand-tighten the nuts, then snug them up with a wrench (don’t overtighten—plastic can crack).
+4. **Snap on Bolt Covers** – If your new seat has them, close the decorative bolt covers.
+
+---
+
+### Step 5: Test It
+Wiggle the seat gently and ensure it feels stable and secure.
+
+---
+
+### Tips for an Easy Install:
+- Choose a **quick-release toilet seat** for easier future cleaning/removal.
+- Some new models don’t even require tools—check for “tool-free installation” on the packaging.
+
+---
+
+That’s it! Now you’ve got a clean, stable, new toilet seat with minimal hassle.
+        
+        
+    Response 2
+    __________
+    # Changing a Toilet Seat with Minimal Fuss
+
+## What You'll Need
+- New toilet seat
+- Adjustable wrench or pliers
+- Screwdriver (likely flathead)
+- Disinfectant wipes or spray
+
+## Step-by-Step Process
+1. **Prepare the area**: Clean around the current seat with disinfectant wipes.
+
+2. **Locate the bolts**: Look at the back of the toilet seat where it connects to the bowl. You'll see two bolts with nuts underneath.
+
+3. **Loosen the nuts**: Hold the bolt heads from above while loosening the nuts from underneath. If they're plastic, you may be able to unscrew them by hand; otherwise, use your wrench.
+
+4. **Remove the old seat**: Once the nuts are off, lift the old seat straight up and discard it.
+
+5. **Install the new seat**: Position the new seat, aligning the holes with the bolt holes in the toilet.
+
+6. **Insert and tighten bolts**: Place the new bolts through the holes and hand-tighten the nuts from underneath. Finish tightening with your wrench, but be careful not to overtighten as this can crack the porcelain.
+
+7. **Check alignment**: Make sure the seat is centered before final tightening.
+
+That's it! The whole process should take less than 15 minutes.
+        
+        
+    Response 3
+    __________
+    Changing a toilet seat is a straightforward task that you can do in just a few minutes with minimal fuss. Here’s a simple step-by-step guide:
+
+### **Tools You’ll Need:**
+- **New toilet seat** (ensure it fits your toilet shape—round or elongated)
+- **Adjustable wrench** or **pliers** (optional, if bolts are stubborn)
+- **Screwdriver** (flathead or Phillips, depending on the bolts)
+- **Rubber gloves** (optional, for hygiene)
+
+### **Steps to Replace a Toilet Seat:**
+1. **Remove the Old Seat:**  
+   - Lift the plastic covers at the back of the seat (near the hinges).  
+   - Use a screwdriver to loosen the nuts underneath (turn counterclockwise).  
+   - If the bolts are corroded, spray with **WD-40** or use pliers to hold the bolt while turning the nut.  
+   - Once loose, lift the old seat off and discard it.
+
+2. **Clean the Area:**  
+   - Wipe the toilet rim with a disinfectant to remove any grime or residue.
+
+3. **Install the New Seat:**  
+   - Align the new seat’s hinges with the bolt holes on the toilet.  
+   - Insert the bolts (usually plastic or metal) through the holes.  
+   - Secure them with the provided nuts underneath (hand-tighten first).  
+   - Use a screwdriver to tighten just enough so the seat doesn’t wobble, but **don’t overtighten** (plastic can crack).  
+
+4. **Test for Stability:**  
+   - Gently wiggle the seat to ensure it’s secure. Adjust if needed.  
+   - Snap any hinge covers into place for a clean look.
+
+### **Pro Tips for Minimal Fuss:**
+✔ **Quick-Release Seats:** Some modern seats have push-button releases, making future changes even easier.  
+✔ **Measure First:** Check if your toilet is **round** or **elongated** before buying a new seat.  
+✔ **Soft-Close Feature:** Consider upgrading to a slow-close seat to prevent slamming.  
+
+That’s it! No need for a plumber—just a few minutes of work for a fresh, wobble-free toilet seat. 🚽🔧
+        
+        
+    Response 4
+    __________
+    Changing a toilet seat can be a breeze if you follow these steps to minimize the fuss:
+
+**1. Gather Your Supplies:**
+
+*   **New Toilet Seat:** Ensure it's the right shape (elongated or round) and size for your toilet bowl. Measure the distance between the mounting holes if you're unsure.
+*   **Screwdriver:** Usually a Phillips-head screwdriver, but sometimes a flathead.
+*   **Adjustable Wrench or Pliers (Optional):** Might be needed for stubborn bolts.
+*   **Penetrating Oil (Optional):** WD-40 or similar, if bolts are rusty or stuck.
+*   **Gloves (Optional):** For hygiene.
+*   **Old Rag or Paper Towels:** For wiping.
+
+**2. Remove the Old Toilet Seat:**
+
+*   **Locate the Mounting Bolts:** These are usually covered by plastic caps on the top of the toilet bowl, behind the seat.
+*   **Lift the Caps:** Gently pry them open with your fingernail or the edge of a flathead screwdriver.
+*   **Loosen the Bolts:**
+    *   **From Above:** Hold the nut under the toilet bowl with one hand (if you can reach it) while turning the screw from above with the screwdriver.
+    *   **From Below (If Accessible):** Use the wrench or pliers to hold the nut under the bowl while unscrewing from above.
+    *   **If Stuck:** Apply penetrating oil to the bolts and let it sit for 10-15 minutes before trying again.
+*   **Remove the Seat:** Once the bolts are loose, lift the old seat off the toilet.
+*   **Clean:** Wipe down the area around the mounting holes with a rag.
+
+**3. Install the New Toilet Seat:**
+
+*   **Identify Hardware:** Familiarize yourself with the new seat's hardware (bolts, nuts, washers). Some seats come with different options for different toilet types.
+*   **Insert the Bolts:**
+    *   Insert the bolts through the mounting holes in the toilet bowl.
+    *   From underneath the bowl, attach the washers and nuts to the bolts.
+*   **Position the Seat:**
+    *   Place the new seat onto the bolts.
+    *   Adjust the position so that the seat is centered and aligned with the bowl.
+*   **Tighten the Bolts:**
+    *   Tighten the nuts by hand first to ensure proper alignment.
+    *   Then, use the screwdriver and (if needed) wrench to tighten the bolts securely, but **do not overtighten**. You risk cracking the porcelain.
+*   **Test:** Open and close the seat to make sure it moves smoothly and is securely attached.
+*   **Snap on Caps (if included):** Cover the bolt heads with the provided plastic caps.
+
+**Tips to Minimize Fuss:**
+
+*   **Read the Instructions:** Carefully read the instructions that come with your new toilet seat. Each model might have slight variations.
+*   **Penetrating Oil is Your Friend:** If you suspect rust or corrosion, don't force anything. Apply penetrating oil and let it work its magic.
+*   **Don't Over-Tighten:** Over-tightening the bolts can damage the toilet bowl or the seat itself.
+*   **If It's Too Hard:** If you're struggling, don't hesitate to call a plumber. Sometimes, old bolts are too rusted or stuck to remove without specialized tools.
+*   **Universal Seats:** Consider buying a "universal fit" toilet seat.  These are often designed to work with a wider range of toilet bowl shapes.
+
+By following these steps, you should be able to change your toilet seat quickly and easily, with minimal fuss. Good luck!
+
+        
+        
+2025-04-04 16:19:13,882 INFO:AFC is enabled with max remote calls: 10.
+2025-04-04 16:19:14,857 INFO:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:19:15,262 INFO:Google response time: 1.38s
+2025-04-04 16:19:18,842 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:19:18,844 INFO:OpenAI response time: 5.04s
+2025-04-04 16:19:19,458 INFO:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-04 16:19:19,462 INFO:Anthropic response time: 5.62s
+2025-04-04 16:19:21,284 INFO:Retrying request to /chat/completions in 0.386496 seconds
+2025-04-04 16:19:22,119 INFO:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 16:19:42,802 INFO:DeepSeek response time: 28.96s
+2025-04-04 16:19:42,805 INFO:Total run time: 56.04s
+2025-04-04 16:19:42,805 INFO:Final preference results:
+
+chatgpt
+_______
+
+1. Response 1 (chatgpt)
+2. Response 3 (deepseek)
+3. Response 4 (gemini)
+4. Response 2 (claude)
+
+Reasoning:
+
+- Response 1 (chatgpt):
+  - Very detailed and well-structured with clear headings.
+  - Offers useful tips (e.g., quick-release seats).
+  - Covers both the removal and installation processes thoroughly.
+  - Includes tools, safety tips (don’t overtighten), and troubleshooting (e.g., if bolts are corroded).
+  - Writing is polished and easy to follow.
+
+- Response 3 (deepseek):
+  - Also clearly structured and easy to understand.
+  - Organized and provides helpful pro tips at the end.
+  - Slightly less detailed than Response 1 (chatgpt) (e.g., less technical advice on stuck bolts).
+  - Still very helpful and user-friendly.
+
+- Response 4 (gemini):
+  - Comprehensive with a solid step-by-step breakdown, including tips for troubleshooting stubborn bolts.
+  - Slightly more verbose and less concise than the top two.
+  - Some redundancy and minor clarity issues in instructions, but overall solid.
+
+- Response 2 (claude):
+  - Most concise, but lacks some details (like what to do with stuck bolts or how to match a seat to bowl shape).
+  - Adequate, but oversimplified compared to the others.
+  - Writing is acceptable but less engaging and helpful than the rest.
+
+claude
+______
+
+1. Response 3 (deepseek)
+2. Response 4 (gemini)
+3. Response 1 (chatgpt)
+4. Response 2 (claude)
+
+• Response 3 (deepseek) provides clear, concise instructions with well-organized sections, useful pro tips, and strikes the perfect balance of detail without overwhelming the reader.
+• Response 4 (gemini) is comprehensive and well-structured with good practical tips, but slightly more verbose than necessary for this task.
+• Response 1 (chatgpt) contains good information but the formatting is somewhat cluttered with excessive dashes and formatting elements.
+• Response 2 (claude) is too brief and lacks some helpful details (like dealing with stuck bolts) that would make the task easier.
+
+Response 3 (deepseek) stands out for its clarity, readability, and inclusion of all necessary information without unnecessary complexity. It uses helpful formatting (bold text for tools and key points) and includes practical tips like considering quick-release seats. The tone is friendly and encouraging while maintaining professionalism.
+
+deepseek
+________
+
+1. **Response 1 (chatgpt)**  
+   - **Factuality:** Comprehensive, detailed steps, includes troubleshooting (e.g., corroded nuts).  
+   - **Writing Style:** Clear, structured with bullet points and subheadings for easy reading.  
+   - **Extras:** Mentions quick-release seats and tool-free options, adding practical value.  
+
+2. **Response 3 (deepseek)**  
+   - **Factuality:** Accurate and concise, covers essentials (WD-40 for corrosion, soft-close feature).  
+   - **Writing Style:** Friendly tone with emojis, but slightly less structured than Response 1 (chatgpt).  
+   - **Extras:** Includes pro tips (e.g., measuring toilet shape) for added usefulness.  
+
+3. **Response 2 (claude)**  
+   - **Factuality:** Correct but lacks depth (e.g., no mention of corroded bolts or seat types).  
+   - **Writing Style:** Simple and direct but feels rushed; fewer details than top responses.  
+
+4. **Response 4 (gemini)**  
+   - **Factuality:** Overly verbose with redundant info (e.g., "universal seats" tip is obvious).  
+   - **Writing Style:** Bulky paragraphs and excessive optional steps dilute clarity.  
+
+**Reasoning:**  
+- **Response 1 (chatgpt)** wins for thoroughness, organization, and practical advice.  
+- **Response 3 (deepseek)** is a close second but loses points for minor stylistic informality.  
+- **Response 2 (claude)** is functional but too brief.  
+- **Response 4 (gemini)** is factually sound but poorly structured and wordy.
+
+gemini
+______
+
+1. Response 1 (chatgpt)
+2. Response 4 (gemini)
+3. Response 3 (deepseek)
+4. Response 2 (claude)
+
+*   **Response 1 (chatgpt):** Clear, concise, and well-structured with useful tips and warnings. The layout is easy to follow.
+*   **Response 4 (gemini):** Comprehensive and covers potential issues like stuck bolts effectively. Good safety advice (don't overtighten).
+*   **Response 3 (deepseek):** Good overall, but includes unnecessary emoticons. The tips are helpful, but the formatting is slightly less clean.
+*   **Response 2 (claude):** Lacks detail compared to the others and misses opportunities for helpful tips. It's too simplistic.
+
+

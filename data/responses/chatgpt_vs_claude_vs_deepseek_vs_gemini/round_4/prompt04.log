@@ -1,0 +1,451 @@
+2025-04-04 17:02:13,311 INFO:Running the pump for the following providers: openai, anthropic, deepseek, google
+2025-04-04 17:02:13,473 INFO:AFC is enabled with max remote calls: 10.
+2025-04-04 17:02:13,974 INFO:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:02:18,376 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:02:18,389 INFO:OpenAI response time: 5.02s
+2025-04-04 17:02:18,887 INFO:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-04 17:02:18,892 INFO:Anthropic response time: 5.46s
+2025-04-04 17:02:20,629 INFO:Google response time: 7.16s
+2025-04-04 17:02:44,248 INFO:DeepSeek response time: 30.82s
+2025-04-04 17:02:44,249 INFO:Results from original prompt:
+
+chatgpt
+_______
+
+Absolutely — it's completely normal to feel nervous before a job interview, but there are definitely steps you can take to stay calm and composed. Here are some practical tips to help you manage your nerves and perform your best:
+
+1. **Prepare Thoroughly the Day Before:**
+   - Review the job description and your CV.
+   - Research the company, its mission, and its recent accomplishments.
+   - Practice your responses to common interview questions out loud.
+   - Prepare a few thoughtful questions to ask the interviewer.
+   - Set out your outfit and gather everything you'll need.
+
+2. **Get a Good Night’s Sleep:**
+   - Aim for 7–9 hours of quality sleep. Rest will help you think clearly and stay emotionally balanced.
+
+3. **Eat a Healthy Breakfast:**
+   - Choose something nutritious that will fuel your body and brain — avoid too much caffeine or sugar, which can increase anxiety.
+
+4. **Use Deep Breathing Techniques:**
+   - Try slow, deep breaths in through your nose for four counts, hold for four, and out through your mouth for four. This calms your nervous system and reduces anxiety.
+
+5. **Visualize Success:**
+   - Spend a few minutes visualizing yourself walking into the interview confident, answering questions smoothly, and connecting with the interviewer. Positive mental imagery can improve performance and ease nerves.
+
+6. **Arrive Early:**
+   - Give yourself extra time to avoid last-minute stress. Arriving 10–15 minutes early is ideal.
+
+7. **Practice Positive Self-talk:**
+   - Replace thoughts like “I’m going to mess this up” with “I’m prepared and capable,” “This is a conversation, not a test,” or “I’ve done my best — now let’s show them who I am.”
+
+8. **Accept Some Nerves:**
+   - It's okay to feel a little nervous — it means you care. Channel that energy into enthusiasm and alertness.
+
+9. **Stretch or Move a Bit Beforehand:**
+   - Gentle stretching, a walk, or even a few arm rolls can help release physical tension.
+
+10. **Remember It’s a Two-Way Conversation:**
+    - You’re evaluating them as much as they’re evaluating you. That mindset can reduce pressure and help you feel more in control.
+
+Finally, keep in mind that interviewers expect some nerves — it’s part of being human. Focusing on connecting genuinely and showcasing your interest in the role goes a long way.
+
+You’ve got this!
+
+claude
+______
+
+# Staying Calm Before Your Job Interview
+
+Here are some practical strategies to help manage your nerves on interview morning:
+
+## The Night Before
+- Prepare your outfit and materials in advance
+- Get a good night's sleep
+- Review your research about the company, but avoid cramming
+
+## Morning Of
+- Give yourself extra time to get ready and travel
+- Eat a light, nutritious breakfast
+- Practice deep breathing: try the 4-7-8 technique (inhale for 4, hold for 7, exhale for 8)
+- Use positive self-talk: "I am prepared," "I have valuable skills to offer"
+- Consider a brief walk or light exercise to release tension
+
+## Right Before
+- Arrive 10-15 minutes early, then take a moment outside to collect yourself
+- Practice power posing in private (standing tall with shoulders back) for 2 minutes
+- Remember that some nervousness is normal and even helpful for performance
+- Focus on being conversational rather than perfect
+
+Remember, the interviewers want you to succeed, and you've already impressed them enough to get this interview. You've got this!
+
+deepseek
+________
+
+Absolutely! It’s completely normal to feel nervous before a job interview, but there are several strategies you can use to stay calm and focused. Here’s some practical advice for the morning of your interview:
+
+### **1. Prepare the Night Before**  
+- Lay out your outfit, print extra copies of your résumé, and pack your bag (with essentials like water, mints, and a notebook).  
+- Review your notes on the company, role, and key talking points—but avoid cramming.  
+
+### **2. Start Your Morning Right**  
+- **Wake up early** to avoid rushing. Give yourself time to ease into the day.  
+- **Eat a light, nutritious breakfast** (e.g., oatmeal, fruit, or eggs) to stabilize your energy. Avoid caffeine overload if it makes you jittery.  
+- **Hydrate**—dehydration can increase anxiety.  
+
+### **3. Calm Your Mind & Body**  
+- **Deep breathing exercises**: Try the 4-7-8 technique (inhale for 4 sec, hold for 7, exhale for 8) to lower stress.  
+- **Power posing**: Stand tall, stretch, or strike a confident pose (like hands on hips) for a minute—this can reduce cortisol (the stress hormone).  
+- **Listen to uplifting music or a motivational podcast** to boost your mood.  
+
+### **4. Visualize Success**  
+- Spend 5 minutes picturing yourself answering questions confidently, smiling, and leaving a great impression.  
+- Remind yourself: *They invited you because they believe you’re qualified.*  
+
+### **5. Arrive Early (But Not Too Early)**  
+- Aim to arrive **10–15 minutes early** to settle in. If you’re too early, wait in a café nearby to avoid awkwardness.  
+- Use the extra time to review notes or practice breathing.  
+
+### **6. Reframe Nervousness as Excitement**  
+- Research shows that telling yourself *"I’m excited!"* instead of *"I’m nervous"* can improve performance. Your body’s adrenaline is there to help you focus!  
+
+### **7. Keep Perspective**  
+- Remember: This is a **conversation**, not an interrogation. The interviewer wants you to succeed.  
+- Even if it doesn’t go perfectly, it’s a learning experience for next time.  
+
+You’ve got this! Confidence comes from preparation, and your nerves are just proof that you care. Good luck—go in there and show them why you’re the right fit!  
+
+Would you like help practicing answers to common interview questions?
+
+gemini
+______
+
+It's completely normal to be nervous before a job interview! Here's some advice to help you stay calm and collected on the big morning:
+
+**Preparation is Key (Done *Before* the Morning):**
+
+*   **Solidify Your Answers:** The more prepared you are, the less anxious you'll be. Review common interview questions and prepare thoughtful, concise answers. Practice using the STAR method (Situation, Task, Action, Result) to structure your responses.
+*   **Research the Company and Role Thoroughly:** Understand their mission, values, recent news, and the specifics of the job description. Knowing what you're talking about builds confidence.
+*   **Plan Your Outfit:** Choose an outfit that is professional, comfortable, and makes you feel confident. Prepare it the night before to eliminate last-minute stress.
+*   **Map Out Your Route (or Test Your Tech):** Whether you're driving or attending virtually, know exactly how you're getting there. If it's virtual, test your camera, microphone, and internet connection. Have backup plans in place (e.g., an alternative route, a different device).
+*   **Practice, Practice, Practice:** Do a mock interview with a friend, family member, or career coach. This will help you identify areas where you can improve and get comfortable articulating your skills and experiences. Even practicing in front of a mirror helps!
+*   **Prioritize Sleep:** A good night's sleep is crucial for managing anxiety and improving focus. Aim for 7-8 hours of quality sleep the night before.
+*   **Prepare Everything the Night Before:** Pack your bag with essential items: a copy of your resume, a notepad, a pen, and any portfolio materials. Lay out your clothes, confirm travel arrangements, and prep anything you need for a virtual interview. This avoids a frantic morning.
+
+**On the Morning Of:**
+
+*   **Wake Up Early (But Not *Too* Early):** Allow yourself plenty of time to get ready without rushing.
+*   **Fuel Your Body:** Eat a healthy and balanced breakfast. Avoid sugary foods that can lead to energy crashes. Opt for protein, whole grains, and fruits.
+*   **Hydrate:** Drink plenty of water. Dehydration can increase anxiety and fatigue.
+*   **Avoid Caffeine Overload:** A little caffeine might be helpful, but too much can make you jittery and anxious. Limit yourself to one cup of coffee or tea.
+*   **Mindfulness and Relaxation Techniques:**
+    *   **Deep Breathing:** Practice deep, slow breathing exercises. Inhale deeply through your nose, hold for a few seconds, and exhale slowly through your mouth. Repeat several times. This can help calm your nervous system.
+    *   **Meditation:** Even a short 5-10 minute meditation can make a big difference. Focus on your breath or use a guided meditation app.
+    *   **Visualization:** Visualize yourself succeeding in the interview. Imagine yourself feeling confident, answering questions clearly, and making a positive impression.
+*   **Positive Affirmations:** Remind yourself of your strengths and accomplishments. Repeat positive affirmations like, "I am capable," "I am prepared," and "I deserve this opportunity."
+*   **Listen to Calming Music:** Play some relaxing music to help you unwind and focus. Avoid anything too upbeat or distracting.
+*   **Light Exercise:** A short walk or some light stretching can help release tension and boost your mood.
+*   **Distraction (in Moderation):** If you're feeling overwhelmed, engage in a light distraction for a few minutes. Read a book, listen to music, or chat with a friend (but avoid dwelling on the interview!).
+*   **Arrive Early (or Log On Early):** Aim to arrive 10-15 minutes early to the interview location (or log on a few minutes early for a virtual interview). This will give you time to compose yourself and avoid feeling rushed.
+*   **In the Waiting Area (or Before the Virtual Start):**
+    *   **Avoid Obsessively Reviewing Notes:** You've done your preparation. Trying to cram more information in at the last minute will likely increase anxiety.
+    *   **Practice Positive Body Language:** Sit up straight, maintain eye contact with others, and smile. Projecting confidence can actually make you feel more confident.
+    *   **Remind Yourself of Your Value:** Remember why you're a strong candidate for the job. Focus on your skills, experience, and accomplishments.
+
+**Remember During the Interview:**
+
+*   **It's Okay to Pause:** If you need a moment to gather your thoughts, it's perfectly acceptable to pause and say, "That's a great question, let me think about that for a moment."
+*   **Focus on the Conversation:** Try to engage in a genuine conversation with the interviewer. This will help you relax and connect with them on a personal level.
+*   **Be Yourself:** Authenticity is key. Let your personality shine through and be genuine in your responses.
+*   **Don't Be Afraid to Ask Questions:** Asking thoughtful questions shows your interest in the role and the company.
+*   **It's Just One Interview:** Even if you don't get this job, it's an opportunity to learn and grow. Every interview is valuable experience.
+
+**Important Mindset Reminders:**
+
+*   **Nerves are Normal:** Acknowledge that it's okay to be nervous. Everyone experiences pre-interview jitters. Don't beat yourself up about it.
+*   **Focus on What You Can Control:** You can't control the outcome of the interview, but you can control your preparation, attitude, and effort.
+*   **You're Qualified:** Remind yourself that you've been selected for an interview because the company sees potential in you.
+*   **Breathe:** Seriously, conscious, deep breaths throughout the entire process are your best friend.
+
+By following these tips, you can manage your nerves and present your best self during your job interview. Good luck! You've got this!
+
+
+
+2025-04-04 17:02:44,249 INFO:New prompt:
+
+    You are going to receive 4 responses from different large language models. The prompt will be 
+    displayed first (labelled as the 'Prompt' section), followed by subsequent sections labelled as 'Response <n>'. 
+    Section titles will be denoted with underscores. I want you to read through all the responses and select the one that 
+    you think is the best, in terms of factuality and writing style. Please rank your answers from 1 to 4, 
+    where 1 is the best and 4 is the worst. Give a small bullet-point list briefly explaining the
+    reasoning behind your choices. Please provide your answers (ranked list) before writing any other text, starting with
+    the character '1'.
+    
+    Prompt
+    ______
+    Please can you offer some advice that I should follow to remain calm on the morning of a job interview? I want to do the
+best I can but I am worried that my nerves will get the better of me.
+    
+    
+    Response 1
+    __________
+    Absolutely — it's completely normal to feel nervous before a job interview, but there are definitely steps you can take to stay calm and composed. Here are some practical tips to help you manage your nerves and perform your best:
+
+1. **Prepare Thoroughly the Day Before:**
+   - Review the job description and your CV.
+   - Research the company, its mission, and its recent accomplishments.
+   - Practice your responses to common interview questions out loud.
+   - Prepare a few thoughtful questions to ask the interviewer.
+   - Set out your outfit and gather everything you'll need.
+
+2. **Get a Good Night’s Sleep:**
+   - Aim for 7–9 hours of quality sleep. Rest will help you think clearly and stay emotionally balanced.
+
+3. **Eat a Healthy Breakfast:**
+   - Choose something nutritious that will fuel your body and brain — avoid too much caffeine or sugar, which can increase anxiety.
+
+4. **Use Deep Breathing Techniques:**
+   - Try slow, deep breaths in through your nose for four counts, hold for four, and out through your mouth for four. This calms your nervous system and reduces anxiety.
+
+5. **Visualize Success:**
+   - Spend a few minutes visualizing yourself walking into the interview confident, answering questions smoothly, and connecting with the interviewer. Positive mental imagery can improve performance and ease nerves.
+
+6. **Arrive Early:**
+   - Give yourself extra time to avoid last-minute stress. Arriving 10–15 minutes early is ideal.
+
+7. **Practice Positive Self-talk:**
+   - Replace thoughts like “I’m going to mess this up” with “I’m prepared and capable,” “This is a conversation, not a test,” or “I’ve done my best — now let’s show them who I am.”
+
+8. **Accept Some Nerves:**
+   - It's okay to feel a little nervous — it means you care. Channel that energy into enthusiasm and alertness.
+
+9. **Stretch or Move a Bit Beforehand:**
+   - Gentle stretching, a walk, or even a few arm rolls can help release physical tension.
+
+10. **Remember It’s a Two-Way Conversation:**
+    - You’re evaluating them as much as they’re evaluating you. That mindset can reduce pressure and help you feel more in control.
+
+Finally, keep in mind that interviewers expect some nerves — it’s part of being human. Focusing on connecting genuinely and showcasing your interest in the role goes a long way.
+
+You’ve got this!
+        
+        
+    Response 2
+    __________
+    # Staying Calm Before Your Job Interview
+
+Here are some practical strategies to help manage your nerves on interview morning:
+
+## The Night Before
+- Prepare your outfit and materials in advance
+- Get a good night's sleep
+- Review your research about the company, but avoid cramming
+
+## Morning Of
+- Give yourself extra time to get ready and travel
+- Eat a light, nutritious breakfast
+- Practice deep breathing: try the 4-7-8 technique (inhale for 4, hold for 7, exhale for 8)
+- Use positive self-talk: "I am prepared," "I have valuable skills to offer"
+- Consider a brief walk or light exercise to release tension
+
+## Right Before
+- Arrive 10-15 minutes early, then take a moment outside to collect yourself
+- Practice power posing in private (standing tall with shoulders back) for 2 minutes
+- Remember that some nervousness is normal and even helpful for performance
+- Focus on being conversational rather than perfect
+
+Remember, the interviewers want you to succeed, and you've already impressed them enough to get this interview. You've got this!
+        
+        
+    Response 3
+    __________
+    Absolutely! It’s completely normal to feel nervous before a job interview, but there are several strategies you can use to stay calm and focused. Here’s some practical advice for the morning of your interview:
+
+### **1. Prepare the Night Before**  
+- Lay out your outfit, print extra copies of your résumé, and pack your bag (with essentials like water, mints, and a notebook).  
+- Review your notes on the company, role, and key talking points—but avoid cramming.  
+
+### **2. Start Your Morning Right**  
+- **Wake up early** to avoid rushing. Give yourself time to ease into the day.  
+- **Eat a light, nutritious breakfast** (e.g., oatmeal, fruit, or eggs) to stabilize your energy. Avoid caffeine overload if it makes you jittery.  
+- **Hydrate**—dehydration can increase anxiety.  
+
+### **3. Calm Your Mind & Body**  
+- **Deep breathing exercises**: Try the 4-7-8 technique (inhale for 4 sec, hold for 7, exhale for 8) to lower stress.  
+- **Power posing**: Stand tall, stretch, or strike a confident pose (like hands on hips) for a minute—this can reduce cortisol (the stress hormone).  
+- **Listen to uplifting music or a motivational podcast** to boost your mood.  
+
+### **4. Visualize Success**  
+- Spend 5 minutes picturing yourself answering questions confidently, smiling, and leaving a great impression.  
+- Remind yourself: *They invited you because they believe you’re qualified.*  
+
+### **5. Arrive Early (But Not Too Early)**  
+- Aim to arrive **10–15 minutes early** to settle in. If you’re too early, wait in a café nearby to avoid awkwardness.  
+- Use the extra time to review notes or practice breathing.  
+
+### **6. Reframe Nervousness as Excitement**  
+- Research shows that telling yourself *"I’m excited!"* instead of *"I’m nervous"* can improve performance. Your body’s adrenaline is there to help you focus!  
+
+### **7. Keep Perspective**  
+- Remember: This is a **conversation**, not an interrogation. The interviewer wants you to succeed.  
+- Even if it doesn’t go perfectly, it’s a learning experience for next time.  
+
+You’ve got this! Confidence comes from preparation, and your nerves are just proof that you care. Good luck—go in there and show them why you’re the right fit!  
+
+Would you like help practicing answers to common interview questions?
+        
+        
+    Response 4
+    __________
+    It's completely normal to be nervous before a job interview! Here's some advice to help you stay calm and collected on the big morning:
+
+**Preparation is Key (Done *Before* the Morning):**
+
+*   **Solidify Your Answers:** The more prepared you are, the less anxious you'll be. Review common interview questions and prepare thoughtful, concise answers. Practice using the STAR method (Situation, Task, Action, Result) to structure your responses.
+*   **Research the Company and Role Thoroughly:** Understand their mission, values, recent news, and the specifics of the job description. Knowing what you're talking about builds confidence.
+*   **Plan Your Outfit:** Choose an outfit that is professional, comfortable, and makes you feel confident. Prepare it the night before to eliminate last-minute stress.
+*   **Map Out Your Route (or Test Your Tech):** Whether you're driving or attending virtually, know exactly how you're getting there. If it's virtual, test your camera, microphone, and internet connection. Have backup plans in place (e.g., an alternative route, a different device).
+*   **Practice, Practice, Practice:** Do a mock interview with a friend, family member, or career coach. This will help you identify areas where you can improve and get comfortable articulating your skills and experiences. Even practicing in front of a mirror helps!
+*   **Prioritize Sleep:** A good night's sleep is crucial for managing anxiety and improving focus. Aim for 7-8 hours of quality sleep the night before.
+*   **Prepare Everything the Night Before:** Pack your bag with essential items: a copy of your resume, a notepad, a pen, and any portfolio materials. Lay out your clothes, confirm travel arrangements, and prep anything you need for a virtual interview. This avoids a frantic morning.
+
+**On the Morning Of:**
+
+*   **Wake Up Early (But Not *Too* Early):** Allow yourself plenty of time to get ready without rushing.
+*   **Fuel Your Body:** Eat a healthy and balanced breakfast. Avoid sugary foods that can lead to energy crashes. Opt for protein, whole grains, and fruits.
+*   **Hydrate:** Drink plenty of water. Dehydration can increase anxiety and fatigue.
+*   **Avoid Caffeine Overload:** A little caffeine might be helpful, but too much can make you jittery and anxious. Limit yourself to one cup of coffee or tea.
+*   **Mindfulness and Relaxation Techniques:**
+    *   **Deep Breathing:** Practice deep, slow breathing exercises. Inhale deeply through your nose, hold for a few seconds, and exhale slowly through your mouth. Repeat several times. This can help calm your nervous system.
+    *   **Meditation:** Even a short 5-10 minute meditation can make a big difference. Focus on your breath or use a guided meditation app.
+    *   **Visualization:** Visualize yourself succeeding in the interview. Imagine yourself feeling confident, answering questions clearly, and making a positive impression.
+*   **Positive Affirmations:** Remind yourself of your strengths and accomplishments. Repeat positive affirmations like, "I am capable," "I am prepared," and "I deserve this opportunity."
+*   **Listen to Calming Music:** Play some relaxing music to help you unwind and focus. Avoid anything too upbeat or distracting.
+*   **Light Exercise:** A short walk or some light stretching can help release tension and boost your mood.
+*   **Distraction (in Moderation):** If you're feeling overwhelmed, engage in a light distraction for a few minutes. Read a book, listen to music, or chat with a friend (but avoid dwelling on the interview!).
+*   **Arrive Early (or Log On Early):** Aim to arrive 10-15 minutes early to the interview location (or log on a few minutes early for a virtual interview). This will give you time to compose yourself and avoid feeling rushed.
+*   **In the Waiting Area (or Before the Virtual Start):**
+    *   **Avoid Obsessively Reviewing Notes:** You've done your preparation. Trying to cram more information in at the last minute will likely increase anxiety.
+    *   **Practice Positive Body Language:** Sit up straight, maintain eye contact with others, and smile. Projecting confidence can actually make you feel more confident.
+    *   **Remind Yourself of Your Value:** Remember why you're a strong candidate for the job. Focus on your skills, experience, and accomplishments.
+
+**Remember During the Interview:**
+
+*   **It's Okay to Pause:** If you need a moment to gather your thoughts, it's perfectly acceptable to pause and say, "That's a great question, let me think about that for a moment."
+*   **Focus on the Conversation:** Try to engage in a genuine conversation with the interviewer. This will help you relax and connect with them on a personal level.
+*   **Be Yourself:** Authenticity is key. Let your personality shine through and be genuine in your responses.
+*   **Don't Be Afraid to Ask Questions:** Asking thoughtful questions shows your interest in the role and the company.
+*   **It's Just One Interview:** Even if you don't get this job, it's an opportunity to learn and grow. Every interview is valuable experience.
+
+**Important Mindset Reminders:**
+
+*   **Nerves are Normal:** Acknowledge that it's okay to be nervous. Everyone experiences pre-interview jitters. Don't beat yourself up about it.
+*   **Focus on What You Can Control:** You can't control the outcome of the interview, but you can control your preparation, attitude, and effort.
+*   **You're Qualified:** Remind yourself that you've been selected for an interview because the company sees potential in you.
+*   **Breathe:** Seriously, conscious, deep breaths throughout the entire process are your best friend.
+
+By following these tips, you can manage your nerves and present your best self during your job interview. Good luck! You've got this!
+
+        
+        
+2025-04-04 17:02:44,421 INFO:AFC is enabled with max remote calls: 10.
+2025-04-04 17:02:45,001 INFO:HTTP Request: POST https://api.deepseek.com/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:02:46,232 INFO:Google response time: 1.81s
+2025-04-04 17:02:46,743 INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 17:02:46,747 INFO:OpenAI response time: 2.43s
+2025-04-04 17:02:50,429 INFO:HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-04 17:02:50,434 INFO:Anthropic response time: 6.06s
+2025-04-04 17:03:07,941 INFO:DeepSeek response time: 23.56s
+2025-04-04 17:03:07,944 INFO:Total run time: 54.63s
+2025-04-04 17:03:07,944 INFO:Final preference results:
+
+chatgpt
+_______
+
+1. Response 3 (deepseek)  
+2. Response 1 (chatgpt)  
+3. Response 2 (claude)  
+4. Response 4 (gemini)  
+
+Reasons for Ranking:
+
+- Response 3 (deepseek):
+  - Comprehensive, well-structured, and engagingly written.
+  - Balanced tone combining practical tips with encouragement.
+  - Uses research-based strategies (e.g., reappraising nerves as excitement).
+  - Includes all major advice areas (preparation, physical/mental techniques, mindset).
+
+- Response 1 (chatgpt):
+  - Very solid and practical; includes all key calming techniques.
+  - Clear and logically ordered.
+  - Slightly more mechanical than Response 3 (deepseek), with less warmth and engagement.
+
+- Response 2 (claude):
+  - Concise and readable but less detailed than 1 and 3.
+  - Good structure using sections like “The Night Before” and “Morning Of.”
+  - Less engaging and somewhat generic in tone.
+
+- Response 4 (gemini):
+  - Overly long and a bit redundant.
+  - Contains all useful and accurate advice, but lacks conciseness and clarity.
+  - Could overwhelm a nervous reader with too many details.
+
+claude
+______
+
+1. Response 4 (gemini)
+2. Response 3 (deepseek)
+3. Response 1 (chatgpt)
+4. Response 2 (claude)
+
+• Response 4 (gemini) provides the most comprehensive advice, with detailed sections covering preparation before the interview day, specific morning-of strategies, and important mindset reminders. It offers practical, actionable tips while acknowledging the normalcy of interview anxiety.
+
+• Response 3 (deepseek) is well-structured with clear headings and concise, practical advice. It covers all essential aspects of interview preparation while maintaining an encouraging tone and offers specific techniques (like 4-7-8 breathing).
+
+• Response 1 (chatgpt) has good content with numbered points but is less comprehensive than Response 4 (gemini) and has less effective formatting than Response 3 (deepseek). It still provides solid advice in a supportive tone.
+
+• Response 2 (claude) is too brief compared to the others, lacks depth in explanations, and doesn't provide as many specific techniques for managing anxiety. Its formatting with hashtags seems less professional.
+
+Response 4 (gemini) stands out for its thorough coverage, practical specificity, and balanced perspective on interview preparation.
+
+deepseek
+________
+
+1. **Response 3 (deepseek)**  
+   - **Factuality**: Comprehensive, well-researched advice with clear, actionable steps (e.g., 4-7-8 breathing, power posing).  
+   - **Writing Style**: Engaging, structured with bullet points and subheadings, and includes motivational phrasing ("You’ve got this!").  
+   - **Balance**: Covers preparation, mindset, and practical tips without overwhelming detail.  
+
+2. **Response 1 (chatgpt)**  
+   - **Factuality**: Solid, practical tips (e.g., visualization, positive self-talk) but lacks unique techniques like power posing.  
+   - **Writing Style**: Clear and warm, but slightly less structured than Response 3 (deepseek).  
+   - **Originality**: Good but leans more generic compared to Response 3 (deepseek)’s reframing of nerves as excitement.  
+
+3. **Response 2 (claude)**  
+   - **Factuality**: Accurate but shorter, missing deeper explanations (e.g., why 4-7-8 breathing works).  
+   - **Writing Style**: Concise with headers but feels more truncated; lacks motivational tone.  
+   - **Depth**: Useful but less comprehensive than top two.  
+
+4. **Response 4 (gemini)**  
+   - **Factuality**: Overly detailed (e.g., excessive sub-bullets) with repetitive advice (e.g., hydration mentioned twice).  
+   - **Writing Style**: Dense and verbose; could overwhelm rather than calm a reader.  
+   - **Focus**: Loses clarity by trying to cover *everything*, including post-interview tips (irrelevant to the prompt).  
+
+---  
+**Best to Worst**: 3 > 1 > 2 > 4  
+**Key Differentiators**: Response 3 (deepseek)’s unique strategies (power posing, reframing nerves) and polished style edged out Response 1 (chatgpt)’s reliability. Response 4 (gemini)’s length and redundancy landed it last.
+
+gemini
+______
+
+1.  Response 4 (gemini)
+2.  Response 1 (chatgpt)
+3.  Response 3 (deepseek)
+4.  Response 2 (claude)
+
+*   **Response 4 (gemini):** This answer is the most comprehensive, providing detailed advice that spans from preparation to the actual interview. It covers a wide range of strategies, including practical tips, mindset shifts, and techniques for managing anxiety. The writing style is clear, organized, and encouraging.
+*   **Response 1 (chatgpt):** This response is also well-structured and provides practical advice, but it is not as comprehensive as Response 4 (gemini). The tips are helpful and actionable, and the tone is supportive.
+*   **Response 3 (deepseek):** This answer provides a good set of tips with a slightly more informal tone. The use of bold text for emphasis is effective, but the overall response is not as detailed or polished as Response 1 (chatgpt) or 4.
+*   **Response 2 (claude):** This response is the least detailed and uses a less engaging format (e.g., bullet points under headings). While the advice is still relevant, it lacks the depth and thoroughness of the other responses.
+
+
