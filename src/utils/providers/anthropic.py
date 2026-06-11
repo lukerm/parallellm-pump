@@ -19,7 +19,7 @@ import anthropic
 
 from ..keys import get_key
 
-ANTHROPIC_MODEL_NAME = "claude-3-7-sonnet-20250219"
+ANTHROPIC_MODEL_NAME = "claude-sonnet-4-6"
 ANTHROPIC_MAX_TOKENS = 4096
 
 
